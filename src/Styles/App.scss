@@ -1,0 +1,33 @@
+@import "../Variables/Variables.scss";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: $color-white;
+}
+
+.App {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button:hover,
+button:focus,
+.Lists--li--h2:hover,
+.Lists--li--h2:focus {
+    cursor: pointer
+}

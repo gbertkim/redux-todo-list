@@ -1,0 +1,14 @@
+@import "../Variables/Variables.scss";
+
+.deleteButton {
+    @include buttonStyle
+}
+
+svg {
+    height: 30px;
+    width: 30px;
+}
+
+.deleteButton {
+    background-color: $color-red;
+}

@@ -1,0 +1,14 @@
+@import "../Variables/Variables.scss";
+
+.editButton {
+    background-color: $color-blue;
+}
+
+.editButton {
+    @include buttonStyle
+}
+
+svg {
+    height: 30px;
+    width: 30px;
+}

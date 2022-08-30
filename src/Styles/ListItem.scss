@@ -1,0 +1,42 @@
+@import "../Variables/Variables.scss";
+
+.ListItem {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    background-color: $color-tan;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.ListItem--wrapper {
+    margin-left: auto;
+}
+
+.editTask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 600px) {
+    .ListItem {
+        grid-template-columns: 1fr;
+    }
+
+    .ListItem--wrapper {
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
